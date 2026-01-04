@@ -12,16 +12,21 @@
     font-style: normal;
 }
 
+:root {
+  --dark-bg: hsl(0, 0%, 7%);
+  --orange: hsl(47, 88%, 63%);
+  --grey:hsl(0, 0%, 42%);
+}
 
 body {
     margin:0;
     font-family: "Figtree", sans-serif;
-    background-color: hsl(0, 0%, 7%);
+    background-color: var(--dark-bg);
+    color: hsl(0, 0%, 7%);
 }
 
 main {
-    background-color: hsl(47, 88%, 63%);
-    margin: auto;
+    background-color: var(--orange);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -30,10 +35,10 @@ main {
 }
 
 .card-container {
-    border: 1px solid black;
-    max-width: 18rem;
+    border: 1px solid var(--orange);
+    max-width: 20rem;
     background-color: hsl(0, 0%, 100%);
-    padding: 1rem;
+    padding: clamp(0.75rem, 2vw, 1.5rem);
     border-radius: 12px;
     box-shadow: 6px 6px 0 rgba(0, 0, 0, 1);
 }
@@ -44,42 +49,41 @@ img {
 }
 
 .text-content {
-    margin-top: 12px;
+    margin-block-start: 1.2rem;
 }
 
 span {
     font-weight: 800;
-    font-size: 10px;
-    background-color: hsl(47, 88%, 63%);
+    background-color: var(--orange);
     padding: 0.25rem 0.5rem;
     border-radius: 2px;
 }
 
 .date {
-    margin-top: 15px;
+    margin-block-start: 1.2rem;
     font-weight: 500;
-    font-size: 11px;
-    color: hsl(0, 0%, 7%);
+    font-size: 0.95rem;
 }
 
 h1 {
-    font-size: 1.24rem;
+    font-size: 1.25rem;
 }
 
 h1:hover {
-    color: hsl(47, 88%, 63%);
+    color: var(--orange);
     cursor: pointer;
 }
 
 .description {
     font-size: 1rem;
-    color: hsl(0, 0%, 42%);
+    color: var(--grey);
 }
 
 .profile {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    margin-top: 1.25rem;
 }
 
 .profile img {
