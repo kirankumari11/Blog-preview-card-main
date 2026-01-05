@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/blog-preview-card-using-flexbox-XJaM6OuFay)
 - Live Site URL: [live site URL](https://kirankumari11.github.io/Blog-preview-card-main/)
 
 ## My process
